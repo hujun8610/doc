@@ -88,6 +88,27 @@ def count(l: List[_]) = l.size
 ```
 
 ## 集合框架
+### 可变集合与不可变集合
+Scala集合系统的区分了可变和不可变集合。可变集合可以在适当的时候进行扩展，而不可变集合永远不会发生改变，但是也可以模拟添加、删除操作，只是会返回一个新的集合。可变集合几种`scala.collection.mutable`中，不可变集合集中中`scala.collection.immutable`中，scala默认使用不可变集合。可变集合与不可变集合的区别是不可变集合类的客户端可以确保不会被修改，**但是仅能保证集合本身不会被修改，并不能保证集合中内容也不会被修改。**
+一个有用的约定，如果希望同时使用可变集合和不可变集合只需要导入`collection.mutable`即可。
+
+### 不可变集合继承图
+![](http://docs.scala-lang.org/resources/images/collections.png)
+
+上图的集合类都是抽象类或者特质，可以看到所有的集合类都继承了`Traversable`特质，表示可遍历。
+下面的图是多有不可变集合的类图：
+![](http://docs.scala-lang.org/resources/images/collections.immutable.png)
+
+可以看到`Array`,`String`都是·Seq·的子类，`TreeMap`是SortedMap的实现。由于这些集合都是不可变的，他们可以很容易的直接应用在多线程环境中，并不需要特殊的同步操作。
+
+### 可变集合
+可变集合类图如下所示：
+![](http://docs.scala-lang.org/resources/images/collections.mutable.png)
+
+可变集合最大的特点是为了使用多线程环境，添加了一些同步的集合类。
+
+
+
 
 ## option[T]、Any、Nothing、Null和Nil
 1. option[T]主要是用来避免NullPointerException异常的(Option本身是一个容器),可以使用`getOrElse` 方法
@@ -110,3 +131,5 @@ val value2 = option2.getOrElse(0)  //返回0
 [scala逆变有什么用](https://www.zhihu.com/question/35339328)
 [协变点与逆变点](http://hongjiang.info/scala-pitfalls-10/)
 [Null, null, Nil, Nothing, None, and Unit in Scala](http://sanaulla.info/2009/07/12/nothingness-2/)
+[scala集合性能比较](http://docs.scala-lang.org/zh-cn/overviews/collections/performance-characteristics)
+[mutable和immutable集合](http://docs.scala-lang.org/zh-cn/overviews/collections/overview)
