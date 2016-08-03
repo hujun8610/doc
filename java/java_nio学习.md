@@ -13,6 +13,7 @@ Buffer本质上就是一个容器，也是nio和传统io的一个非常重要的
 
 Buffer的方法
 <li> get方法
+
 ```
 byte get();  //读取单个字节
 ByteBuffer get( byte dst[] );  //将一组字节读入数组中  
@@ -24,6 +25,7 @@ byte get( int index );  //从缓冲区特定位置读取
 
 <li> put方法
 put方法与get方法类似：
+
 ```
     ByteBuffer put( byte b );  
     ByteBuffer put( byte src[] );  
@@ -31,7 +33,136 @@ put方法与get方法类似：
     ByteBuffer put( ByteBuffer src );  
     ByteBuffer put( int index, byte b );
 ```
+
+### Channel
+Java nio中的通道类似于流，但是和流存在一些区别:
+<li>既可以从通道中读取数据也可写入数据，但是**读写数据是单向的**
+<li>通道可以异步的读写
+<li>通道中的数据总是从buffer中读入或者从buffer写到数据通道。
+
+Java nio中包含四种通道，分别如下所示：
+
+- FileChannel:从文件中读写：
+
+   - FileChannel无法设置为非阻塞模式，一直在阻塞模式。在使用FileChannel的时候必须从InputStream、OutputStream或者RandomAccessFile中获取一个FileChannel的实例。
+注意**通道使用完成后必须调用close方法来关闭通道**
+
+- DatagramChannel：从UDP中读写网络数据,接收数据调用receive方法，发送数据调用send方法。
+
+	- 打开通道的方式如下所示：
+	
+	```
+		DatagramChannel channel = DatagramChannel.open();
+		channel.socket().bind(new InetSocketAddress(9999));
+	```
+	
+- SocketChannel:通过TCP读写网络数据
+
+	- 打开SocketChannel两种方式，创建一个SocketChannel并连接到网络服务器，或者当一个新的连接到达ServerSocketChannel的时候，创建SocketChannel。代码如下所示：
+	
+	```
+	SocketChannel socketChannel = SocketChannel.open();
+socketChannel.connect(new InetSocketAddress("http://jenkov.com", 80));
+	```
+	注意**可以设置SocketChannel为异步工作模式，设置之后就可以以异步的方式调用connect、read和write方法来访问网络**
+
+- ServerSocketChannel：监听新的TCP连接，对每一个进来的TCP连接创建一个SocketChannel。两种工作模式，阻塞模式和非阻塞模式
+	- 阻塞模式
+	
+	```
+	ServerSocketChannel serverSocketChannel = ServerSocketChannel.open(); 
+   serverSocketChannel.socket().bind(new InetSocketAddress(9999));
  
+    while(true){
+    	SocketChannel socketChannel =
+            serverSocketChannel.accept();
+ 		}
+	```
+	
+	- 非阻塞模式
+	
+	```
+	ServerSocketChannel serverSocketChannel = ServerSocketChannel.open();
+ 
+	serverSocketChannel.socket().bind(new InetSocketAddress(9999));
+	serverSocketChannel.configureBlocking(false);
+ 
+	while(true){
+    SocketChannel socketChannel =
+            serverSocketChannel.accept();
+    //在非阻塞模式下，accept() 方法会立刻返回，如果还没有新进来的连接,返回的将是null。 因此，需要检查返回的SocketChannel是否是null
+    if(socketChannel != null){
+        //do something with socketChannel...
+    	}
+	}
+	```
+
+### Scatter/Gather
+- scatter:从Channel中读取是指在读操作时将读取的数据写入多个buffer中。因此，Channel将从Channel中读取的数据“分散（scatter）”到多个Buffer中。
+
+![scatter](http://ifeve.com/wp-content/uploads/2013/06/scatter.png)
+
+代码如下所示：
+
+```
+ByteBuffer header = ByteBuffer.allocate(128);
+ByteBuffer body   = ByteBuffer.allocate(1024);
+ 
+ByteBuffer[] bufferArray = { header, body };
+ 
+channel.read(bufferArray);
+```
+
+
+- 聚集（gather）写入Channel是指在写操作时将多个buffer的数据写入同一个Channel，因此，Channel 将多个Buffer中的数据“聚集（gather）”后发送到Channel。
+
+![gather](http://ifeve.com/wp-content/uploads/2013/06/gather.png)
+
+代码如下所示：
+
+```
+ByteBuffer header = ByteBuffer.allocate(128);
+ByteBuffer body   = ByteBuffer.allocate(1024);
+ 
+//write data into buffers
+ 
+ByteBuffer[] bufferArray = { header, body };
+ 
+channel.write(bufferArray);
+```
+### 通道之间的数据传输
+<li> transformFrom方法：将数据从源通道传入FileChannel中。代码如下所示：
+
+```
+RandomAccessFile fromFile = new RandomAccessFile("fromFile.txt", "rw");
+FileChannel      fromChannel = fromFile.getChannel();
+ 
+RandomAccessFile toFile = new RandomAccessFile("toFile.txt", "rw");
+FileChannel      toChannel = toFile.getChannel();
+ 
+long position = 0;
+long count = fromChannel.size();
+ 
+toChannel.transferFrom(position, count, fromChannel);
+```
+
+<li>transformTo方法从FileChannel传输到其他Channel，代码如下所示：
+
+```
+RandomAccessFile fromFile = new RandomAccessFile("fromFile.txt", "rw");
+FileChannel      fromChannel = fromFile.getChannel();
+ 
+RandomAccessFile toFile = new RandomAccessFile("toFile.txt", "rw");
+FileChannel      toChannel = toFile.getChannel();
+ 
+long position = 0;
+long count = fromChannel.size();
+ 
+fromChannel.transferTo(position, count, toChannel);
+```
+
 
 ## 参考
 [核心概念和基本读写](http://www.importnew.com/20784.html)
+
+[Java NIO系列教程（2）：Channel](http://www.importnew.com/18827.html)
