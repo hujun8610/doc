@@ -15,10 +15,8 @@ Java内存模型主要用于多线程之间的通信。对于线程内的局部�
 ```
 两条语句在执行的时候完全有可能出现先赋值b再赋值a的可能，在单线程中出现指令重排序不会导致结果出现问题。但是在多线程中指令重排序会出现严重的问题，且问题有时候很难重现。
 在多线程中由于线程交互执行，此时在访问共享变量的时候由于指令重排序有可能导致共享变量错误的状态，导致程序出现严重的bug。因此必须用引入同步和互斥来避免该问题。
-多线程指令重排序问题：
-```java
+多线程指令重排序问题：详细可参考[代码](https://github.com/hujun8610/sparkProject/blob/master/commonAlgorithm/src/main/java/com/bupt/javalearning/mutithread/memorymodel/InstructionReorderDemo.java)
 
-```
 
 ## happens-before
 用于描述两个操作之间的内存可见性。两个操作既可以是同一个进程内部也可以是在不同的进程之间。一句话两个操作存在happens-before关系，在前一个操作的结果对后一个操作可见。需要注意的是：**两个操作之间具有happens-before关系，并不意味着前一个操作必须要在后一个操作之前执行！happens-before仅仅要求前一个操作（执行的结果）对后一个操作可见，且前一个操作按顺序排在第二个操作之前**
