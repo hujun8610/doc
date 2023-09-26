@@ -1,6 +1,91 @@
-<mxfile host="app.diagrams.net" modified="2023-06-06T03:24:18.945Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" version="21.3.4" etag="VW4wua_-FDbDYdifaQOv" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-26T03:17:28.963Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="brWvpflJcj_67ExBWfvt" version="21.7.5" type="github" pages="2">
   <diagram name="第 1 页" id="ke_sULQ0Pp870_McWvx6">
-    <mxGraphModel>
+    <mxGraphModel dx="1004" dy="1395" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="tfuMoRNTXCS_lLPnVBTb-33" value="&lt;h1&gt;&lt;br&gt;&lt;/h1&gt;&lt;div&gt;交互过程：&lt;/div&gt;&lt;div&gt;1. 用户填表&lt;/div&gt;&lt;div&gt;2. 根据表格中内容：&lt;/div&gt;&lt;div&gt;- 创建一个应用工单：生成测试环境key，生成生产环境key。&lt;/div&gt;&lt;div&gt;- 创建一个网络工单：测试环境ip白名单流转到运维，生产环境ip白名单直接落库。网络策略则都直接流转到运维。&lt;/div&gt;&lt;div&gt;- 创建接口权限工单：两个工单都直接流转到开发，测试环境开发自己配置，生产环境审核通过之后直接生效。&lt;/div&gt;&lt;div&gt;- 创建数据权限工单：&lt;/div&gt;两个工单都直接流转到开发，测试环境可以不配置，生产环境审核通过之后直接生效&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- 创建回调工单：测试环境视网络开通情况决定是否配置回调，生产环境审核通过之后生效。&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- 权限调整工单：生产环境直接生效。&lt;/div&gt;&lt;div&gt;&lt;/div&gt;- 创建能力引入工单：&lt;br&gt;这个能力引入某种程度上和现在的需求管理的流程重复了，和当前的接口接入流程的差异在哪里？能否去掉这个流程，只保留函数编程的实现。&lt;br&gt;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="205" y="800" width="605" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="tfuMoRNTXCS_lLPnVBTb-34" value="project" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="375" y="370" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tfuMoRNTXCS_lLPnVBTb-47" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tfuMoRNTXCS_lLPnVBTb-35" target="tfuMoRNTXCS_lLPnVBTb-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tfuMoRNTXCS_lLPnVBTb-35" value="ticket" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="370" y="480" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tfuMoRNTXCS_lLPnVBTb-37" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tfuMoRNTXCS_lLPnVBTb-34" target="tfuMoRNTXCS_lLPnVBTb-35">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500" y="440" as="sourcePoint" />
+            <mxPoint x="660" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tfuMoRNTXCS_lLPnVBTb-38" value="1" style="resizable=0;html=1;whiteSpace=wrap;align=left;verticalAlign=bottom;" connectable="0" vertex="1" parent="tfuMoRNTXCS_lLPnVBTb-37">
+          <mxGeometry x="-1" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tfuMoRNTXCS_lLPnVBTb-39" value="N" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" connectable="0" vertex="1" parent="tfuMoRNTXCS_lLPnVBTb-37">
+          <mxGeometry x="1" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tfuMoRNTXCS_lLPnVBTb-40" value="聚合" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="tfuMoRNTXCS_lLPnVBTb-37">
+          <mxGeometry x="-0.1268" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tfuMoRNTXCS_lLPnVBTb-41" value="application" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="40" y="610" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tfuMoRNTXCS_lLPnVBTb-42" value="callback" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="180" y="610" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tfuMoRNTXCS_lLPnVBTb-43" value="itf_permiss" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="314" y="610" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tfuMoRNTXCS_lLPnVBTb-44" value="network" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="440" y="610" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tfuMoRNTXCS_lLPnVBTb-45" value="data_permiss" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="570" y="610" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tfuMoRNTXCS_lLPnVBTb-46" value="capacity" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="690" y="610" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tfuMoRNTXCS_lLPnVBTb-48" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.58;entryY=0;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryPerimeter=0;" edge="1" parent="1" source="tfuMoRNTXCS_lLPnVBTb-35" target="tfuMoRNTXCS_lLPnVBTb-42">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="527" as="sourcePoint" />
+            <mxPoint x="100" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tfuMoRNTXCS_lLPnVBTb-49" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tfuMoRNTXCS_lLPnVBTb-35" target="tfuMoRNTXCS_lLPnVBTb-43">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="405" y="530" as="sourcePoint" />
+            <mxPoint x="370" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tfuMoRNTXCS_lLPnVBTb-50" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.43;entryY=-0.025;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="tfuMoRNTXCS_lLPnVBTb-35" target="tfuMoRNTXCS_lLPnVBTb-44">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="430" y="530" as="sourcePoint" />
+            <mxPoint x="374" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tfuMoRNTXCS_lLPnVBTb-51" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tfuMoRNTXCS_lLPnVBTb-35" target="tfuMoRNTXCS_lLPnVBTb-45">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="430" y="530" as="sourcePoint" />
+            <mxPoint x="493" y="619" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tfuMoRNTXCS_lLPnVBTb-52" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tfuMoRNTXCS_lLPnVBTb-35" target="tfuMoRNTXCS_lLPnVBTb-46">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="455" y="530" as="sourcePoint" />
+            <mxPoint x="630" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="z3GxOowav6SGuAZD9DW1" name="第 2 页">
+    <mxGraphModel dx="1004" dy="1395" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
