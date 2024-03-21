@@ -1,25 +1,25 @@
-<mxfile host="app.diagrams.net" modified="2024-03-21T01:57:08.090Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="VKAfNmOekoDfIaqaNAhy" version="24.0.7" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-21T02:01:43.715Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="NKsnwUSRhqtfizr_D3Zh" version="24.0.7" type="github">
   <diagram name="第 1 页" id="dSIhvU0dKcElDhx-kQ-N">
     <mxGraphModel dx="1111" dy="1184" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="HTNJG7tYK3va8EVSMh3G-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="HTNJG7tYK3va8EVSMh3G-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="70" y="50" width="690" height="410" as="geometry" />
         </mxCell>
-        <mxCell id="HTNJG7tYK3va8EVSMh3G-2" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;ummp-gateway&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="HTNJG7tYK3va8EVSMh3G-2" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;ummp-gateway&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="90" y="235" width="650" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="HTNJG7tYK3va8EVSMh3G-3" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;渠道管理系统&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="HTNJG7tYK3va8EVSMh3G-3" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;渠道管理系统&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="810" y="50" width="90" height="410" as="geometry" />
         </mxCell>
-        <mxCell id="HTNJG7tYK3va8EVSMh3G-4" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;csc-gateway&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="HTNJG7tYK3va8EVSMh3G-4" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;csc-gateway&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="90" y="386" width="300" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HTNJG7tYK3va8EVSMh3G-5" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;ummp-proxy&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="HTNJG7tYK3va8EVSMh3G-5" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;ummp-proxy&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="420" y="386" width="320" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HTNJG7tYK3va8EVSMh3G-6" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;cbpsp-openplatform&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="HTNJG7tYK3va8EVSMh3G-6" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;cbpsp-openplatform&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="90" y="80" width="650" height="130" as="geometry" />
         </mxCell>
       </root>
