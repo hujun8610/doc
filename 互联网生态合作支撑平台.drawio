@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-04-08T03:01:48.542Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="OtjYe1fES1MMNXWvGAYd" version="24.2.2" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2024-04-08T09:44:25.584Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="K15QcayFAsZVWsstRSoA" version="24.2.2" type="github" pages="3">
   <diagram name="第 1 页" id="ke_sULQ0Pp870_McWvx6">
     <mxGraphModel dx="2508" dy="1418" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1497,6 +1497,99 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="tJE1wNYzdLbZ97mxpRVy-77" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="237" width="780" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="tJE1wNYzdLbZ97mxpRVy-1" value="Pool" style="swimlane;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=20;horizontal=0;horizontalStack=1;" vertex="1" parent="1">
+          <mxGeometry x="10" y="50" width="1050" height="590" as="geometry" />
+        </mxCell>
+        <mxCell id="tJE1wNYzdLbZ97mxpRVy-2" value="商务" style="swimlane;startSize=20;" vertex="1" parent="tJE1wNYzdLbZ97mxpRVy-1">
+          <mxGeometry x="20" width="180" height="590" as="geometry" />
+        </mxCell>
+        <mxCell id="tJE1wNYzdLbZ97mxpRVy-14" value="集团主数据系统" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="tJE1wNYzdLbZ97mxpRVy-2">
+          <mxGeometry x="40" y="86" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tJE1wNYzdLbZ97mxpRVy-15" value="集团合同系统" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="tJE1wNYzdLbZ97mxpRVy-2">
+          <mxGeometry x="40" y="160" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tJE1wNYzdLbZ97mxpRVy-16" value="" style="ellipse;fillColor=strokeColor;html=1;" vertex="1" parent="tJE1wNYzdLbZ97mxpRVy-2">
+          <mxGeometry x="75" y="26" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tJE1wNYzdLbZ97mxpRVy-3" value="运营" style="swimlane;startSize=20;" vertex="1" parent="tJE1wNYzdLbZ97mxpRVy-1">
+          <mxGeometry x="200" width="420" height="590" as="geometry">
+            <mxRectangle x="140" width="40" height="650" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tJE1wNYzdLbZ97mxpRVy-30" value="电子渠道管理系统" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="tJE1wNYzdLbZ97mxpRVy-3">
+          <mxGeometry x="30" y="86" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tJE1wNYzdLbZ97mxpRVy-34" value="营销活动管理" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="tJE1wNYzdLbZ97mxpRVy-3">
+          <mxGeometry x="190" y="230" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tJE1wNYzdLbZ97mxpRVy-43" value="插码" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="tJE1wNYzdLbZ97mxpRVy-3">
+          <mxGeometry x="190" y="300" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tJE1wNYzdLbZ97mxpRVy-42" value="大数据报表" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="tJE1wNYzdLbZ97mxpRVy-3">
+          <mxGeometry x="190" y="450" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tJE1wNYzdLbZ97mxpRVy-76" value="网关权&lt;div&gt;限&lt;span style=&quot;background-color: initial;&quot;&gt;管理&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="tJE1wNYzdLbZ97mxpRVy-3">
+          <mxGeometry x="320" y="230" width="60" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="tJE1wNYzdLbZ97mxpRVy-5" value="产商品管理员" style="swimlane;startSize=20;" vertex="1" parent="tJE1wNYzdLbZ97mxpRVy-1">
+          <mxGeometry x="620" width="210" height="590" as="geometry">
+            <mxRectangle x="140" width="40" height="650" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tJE1wNYzdLbZ97mxpRVy-60" value="一级产商品中心" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="tJE1wNYzdLbZ97mxpRVy-5">
+          <mxGeometry x="50" y="86" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tJE1wNYzdLbZ97mxpRVy-12" value="运维" style="swimlane;startSize=20;" vertex="1" parent="tJE1wNYzdLbZ97mxpRVy-1">
+          <mxGeometry x="830" width="220" height="590" as="geometry">
+            <mxRectangle x="140" width="40" height="650" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tJE1wNYzdLbZ97mxpRVy-57" value="日志查询" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="tJE1wNYzdLbZ97mxpRVy-12">
+          <mxGeometry x="50" y="290" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tJE1wNYzdLbZ97mxpRVy-58" value="客诉处理" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="tJE1wNYzdLbZ97mxpRVy-12">
+          <mxGeometry x="50" y="370" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tJE1wNYzdLbZ97mxpRVy-33" value="渠道商品管理" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="280" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tJE1wNYzdLbZ97mxpRVy-66" value="渠道页面管理" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="350" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tJE1wNYzdLbZ97mxpRVy-59" value="研发云工单" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="430" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tJE1wNYzdLbZ97mxpRVy-41" value="业务办理" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="430" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tJE1wNYzdLbZ97mxpRVy-52" value="运营分析系统" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="500" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tJE1wNYzdLbZ97mxpRVy-35" value="产商品管理" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="400" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tJE1wNYzdLbZ97mxpRVy-70" value="一级能开" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="680" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tJE1wNYzdLbZ97mxpRVy-71" value="卡券中心" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="291" y="680" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tJE1wNYzdLbZ97mxpRVy-72" value="统一支付" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="473" y="680" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tJE1wNYzdLbZ97mxpRVy-73" value="统一认证" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="644" y="680" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tJE1wNYzdLbZ97mxpRVy-74" value="。。。。。" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="680" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tJE1wNYzdLbZ97mxpRVy-78" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;线上销售平台&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="530" y="240" width="120" height="40" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
