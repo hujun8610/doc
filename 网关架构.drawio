@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-07-08T06:51:48.010Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="Sx8xfdOwc8UnlIDTlp9Z" version="24.5.4" type="github">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.1" pages="2">
   <diagram name="第 1 页" id="rL479KC2GP0uy-LAvAyu">
     <mxGraphModel dx="2250" dy="2094" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -160,6 +160,26 @@
         </mxCell>
         <mxCell id="YQ1YVP4Hbw2NyQgz9QkE-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.625;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="YQ1YVP4Hbw2NyQgz9QkE-59" target="YQ1YVP4Hbw2NyQgz9QkE-13">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="mqFLSjw5bh_MkVLHcxQW" name="整体架构">
+    <mxGraphModel dx="2074" dy="1241" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="KmUIaSq6xmH69jJKkp5R-3" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="170" width="730" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="KmUIaSq6xmH69jJKkp5R-2" value="呼池机房" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="414" y="170" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KmUIaSq6xmH69jJKkp5R-4" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="170" width="730" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="KmUIaSq6xmH69jJKkp5R-5" value="苏州机房" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1350" y="170" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
