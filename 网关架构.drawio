@@ -229,7 +229,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="mqFLSjw5bh_MkVLHcxQW" name="整体架构">
-    <mxGraphModel dx="2991" dy="1416" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3158" dy="1525" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -288,7 +288,7 @@
         <mxCell id="2xXGmWmYKc1sObddvyoL-3" value="portal" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
           <mxGeometry x="120" y="440" width="280" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="2xXGmWmYKc1sObddvyoL-4" value="pkg" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+        <mxCell id="2xXGmWmYKc1sObddvyoL-4" value="card" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
           <mxGeometry x="120" y="530" width="280" height="60" as="geometry" />
         </mxCell>
         <mxCell id="2xXGmWmYKc1sObddvyoL-5" value="buy" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
@@ -318,7 +318,7 @@
         <mxCell id="2xXGmWmYKc1sObddvyoL-11" value="buy" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
           <mxGeometry x="970" y="440" width="280" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="2xXGmWmYKc1sObddvyoL-12" value="pkg" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+        <mxCell id="2xXGmWmYKc1sObddvyoL-12" value="card" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
           <mxGeometry x="970" y="530" width="280" height="60" as="geometry" />
         </mxCell>
         <mxCell id="2xXGmWmYKc1sObddvyoL-13" value="charge" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
