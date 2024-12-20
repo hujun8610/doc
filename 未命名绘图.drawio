@@ -1,9 +1,111 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.3">
   <diagram id="THGEiyhQjzUQyqXeMc_L" name="第 1 页">
-    <mxGraphModel dx="1570" dy="991" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1308" dy="826" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="4PiRQ9k4XfLBHAaCVReJ-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="4PiRQ9k4XfLBHAaCVReJ-1" target="4PiRQ9k4XfLBHAaCVReJ-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4PiRQ9k4XfLBHAaCVReJ-11" value="Register" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" vertex="1" connectable="0" parent="4PiRQ9k4XfLBHAaCVReJ-10">
+          <mxGeometry x="-0.0726" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4PiRQ9k4XfLBHAaCVReJ-1" value="Nginx" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="350" y="139" width="80" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="4PiRQ9k4XfLBHAaCVReJ-3" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="80" y="140" width="180" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="4PiRQ9k4XfLBHAaCVReJ-4" value="K8S" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="140" y="140" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4PiRQ9k4XfLBHAaCVReJ-5" value="Service1&lt;br&gt;内网ip1&lt;br&gt;Nacos client" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="110" y="184" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="4PiRQ9k4XfLBHAaCVReJ-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="4PiRQ9k4XfLBHAaCVReJ-6" target="4PiRQ9k4XfLBHAaCVReJ-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4PiRQ9k4XfLBHAaCVReJ-6" value="Service2&lt;br&gt;内网ip2&lt;br&gt;Nacos client" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="110" y="254" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="4PiRQ9k4XfLBHAaCVReJ-7" value="Service3&lt;br&gt;内网ip3&lt;br&gt;Nacos client" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="110" y="324" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="4PiRQ9k4XfLBHAaCVReJ-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;curved=1;strokeWidth=2;dashed=1;" edge="1" parent="1" source="4PiRQ9k4XfLBHAaCVReJ-8" target="4PiRQ9k4XfLBHAaCVReJ-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="560" y="279" />
+              <mxPoint x="560" y="440" />
+              <mxPoint x="170" y="440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4PiRQ9k4XfLBHAaCVReJ-13" value="UDP" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="4PiRQ9k4XfLBHAaCVReJ-12">
+          <mxGeometry x="-0.0423" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4PiRQ9k4XfLBHAaCVReJ-8" value="Nacos" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="570" y="249" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4PiRQ9k4XfLBHAaCVReJ-14" value="&amp;nbsp; &amp;nbsp; 版本：V2.1.0" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="600" y="204" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4PiRQ9k4XfLBHAaCVReJ-15" value="Nacos Client V1.4.6" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="100" y="100" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4PiRQ9k4XfLBHAaCVReJ-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="435" y="701" as="sourcePoint" />
+            <mxPoint x="575" y="701" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4PiRQ9k4XfLBHAaCVReJ-17" value="Register" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" vertex="1" connectable="0" parent="4PiRQ9k4XfLBHAaCVReJ-16">
+          <mxGeometry x="-0.0726" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4PiRQ9k4XfLBHAaCVReJ-18" value="Nginx" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="355" y="549" width="80" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="4PiRQ9k4XfLBHAaCVReJ-19" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="85" y="550" width="180" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="4PiRQ9k4XfLBHAaCVReJ-20" value="K8S" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="145" y="550" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4PiRQ9k4XfLBHAaCVReJ-21" value="Service1&lt;br&gt;内网ip1&lt;br&gt;Nacos client" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="115" y="594" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="4PiRQ9k4XfLBHAaCVReJ-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="235" y="701" as="sourcePoint" />
+            <mxPoint x="355" y="701" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4PiRQ9k4XfLBHAaCVReJ-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1" source="4PiRQ9k4XfLBHAaCVReJ-23" target="4PiRQ9k4XfLBHAaCVReJ-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4PiRQ9k4XfLBHAaCVReJ-23" value="Service2&lt;br&gt;内网ip2&lt;br&gt;Nacos client" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="115" y="664" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="4PiRQ9k4XfLBHAaCVReJ-24" value="Service3&lt;br&gt;内网ip3&lt;br&gt;Nacos client" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="115" y="734" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="4PiRQ9k4XfLBHAaCVReJ-27" value="Nacos" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="575" y="659" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4PiRQ9k4XfLBHAaCVReJ-28" value="&amp;nbsp; &amp;nbsp; 版本：V2.1.0" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="605" y="614" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4PiRQ9k4XfLBHAaCVReJ-29" value="Nacos Client V2.x" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="110" y="510" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4PiRQ9k4XfLBHAaCVReJ-30" value="GRPC协议双向通信" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="390" y="659" width="180" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
